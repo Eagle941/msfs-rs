@@ -69,10 +69,6 @@ fn main() {
         data
     );
 
-    //println!("DATA:");
-    //print!("{}", data);
-
-    //panic!("Bye");
     std::fs::write(
         std::path::PathBuf::from(std::env::var("OUT_DIR").unwrap()).join("bindings.rs"),
         source,
